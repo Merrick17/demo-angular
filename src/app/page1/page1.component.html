@@ -1,0 +1,13 @@
+<section class="container d-flex flex-column">
+    <div  >
+        <label class="mx-2 py-2">Title</label>
+        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" [(ngModel)]="newPost">
+        
+    </div>
+    <label class="mx-2 py-2">description</label>
+    <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" [(ngModel)]="newDescription">
+    <button class="btn btn-primary mt-5" (click)="addPost()">Add  </button>
+    <ul class="mt-3">
+        <li *ngFor="let post of postList">{{post}}</li>
+    </ul>
+</section>

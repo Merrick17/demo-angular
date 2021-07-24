@@ -1,0 +1,11 @@
+<div class="container">
+    <ul>
+        <li *ngFor="let post of postList"> 
+                <div class="d-flex flex-column">
+                    <p>TITLE: {{post.title}}</p>
+                    <p>DESCRIPTION: {{post.description}}</p>
+                    <p>CREATED BY : {{post.createdBy.name}}</p>
+                </div>
+        </li>
+    </ul>
+</div>
